@@ -96,3 +96,15 @@ Correlation (true vs. posterior mean):
 
 
 Spline flow clearly outperforms affine.
+
+
+
+Summary :
+
+- Built a simulation-based inference pipeline using BayesFlow and CAMB to generate noisy galaxy power spectra and estimate joint posteriors for (H₀, Ωₘ, nₛ).
+
+- Improved model fit by 31.46% in negative log-likelihood, demonstrating superior posterior learning with spline-based flows.
+
+- Achieved high posterior recovery accuracy using spline flows, with strong correlations for H₀ (r = 0.985), Ωₘ (r = 0.956), and nₛ (r = 0.982), outperforming the affine baseline (r = 0.894, 0.766, 0.882).
+
+- Diagnosed inference quality via calibration plots and parameter recovery, confirming spline flows deliver lower variance, reduced bias, and tighter alignment with true cosmological parameters.
